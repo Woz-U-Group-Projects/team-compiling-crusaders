@@ -34,6 +34,10 @@ class Task extends React.Component {
     });
   };
 
+  updateTask = () => {
+    //code that will make a call to the backend to update tasks
+  };
+
 
   render() {
     return (
