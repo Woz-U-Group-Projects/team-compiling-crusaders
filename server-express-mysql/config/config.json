@@ -2,14 +2,14 @@
   "development": {
     "username": "root",
     "password": "Password1!",
-    "database": "newDB",
+    "database": "blogsite",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "Password1!",
-    "database": "blogsite",
+    "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
