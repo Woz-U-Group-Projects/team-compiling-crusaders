@@ -1,9 +1,5 @@
 {
     "tables": {
-        "blogposts": {
-            "tableName": "blogposts",
-            "indexes": []
-        },
         "Tasks": {
             "tableName": "Tasks",
             "indexes": []
@@ -13,5 +9,5 @@
             "indexes": []
         }
     },
-    "revision": 2
+    "revision": 1
 }
