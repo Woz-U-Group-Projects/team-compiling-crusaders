@@ -20,10 +20,6 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(300),
       allowNull: true
     },
-    blogPosts: {
-      type: DataTypes.STRING(5000),
-      allowNull: true
-    },
     age: {
       type: DataTypes.INTEGER,
       allowNull: false
