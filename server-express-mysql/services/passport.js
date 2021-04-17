@@ -30,3 +30,5 @@ passport.deserializeUser((id, callback) => {
     .then(user =>  callback(null, user))
     .catch(err => callback(err));
 });
+
+module.exports = passport;
