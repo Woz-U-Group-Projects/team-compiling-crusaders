@@ -5,7 +5,7 @@ var models = require('./models');
 passport.use(
     'local',
     new LocalStrategy((username, password, done) => {
-        models.users.fineOne({where: { Username: username } })
+        models.users.fineOne({where: { username: username } })
         .then(user => {
             if (!user) {
                 return done(null, false, { message: 'Incorrect username'});
