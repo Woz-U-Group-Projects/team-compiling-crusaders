@@ -30,7 +30,11 @@ var authenticationService = {
         let salt = bcrypt.genSaltSync(10);
         let hash = bcrypt.hashSync(plainTextPassword, salt);
         return hash;
+    },
+    comparePasswords: (plainTextPassword, hashedPassword) => {
+        return bcrypt.compareSync(plainTextPassword, hashedPassword)
     }
 }
+
 
 module.exports = authenticationService;
