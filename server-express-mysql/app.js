@@ -7,8 +7,9 @@ var cors = require("cors");
 var passport = require('passport');
 var session = require('express-session');
 
+var usersRouter = require('./routes/users');
 var tasksRouter = require("./routes/tasks");
-var testRouter = require("./routes/test");
+
 
 var app = express();
 
@@ -23,8 +24,9 @@ app.use(session({ secret: 'code monkey' }));
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use('/users', usersRouter);
 app.use("/tasks", tasksRouter);
-app.use("/test", testRouter);
+
 
 
 models.sequelize.sync().then(function() {
