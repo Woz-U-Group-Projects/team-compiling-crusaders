@@ -2,14 +2,17 @@
   "development": {
     "username": "root",
     "password": "Password1!",
-    "database": "sakila",
+    "database": "blogsite",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "define": {
+      "timestamps": false
+    }
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
+    "password": "Password1!",
+    "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
